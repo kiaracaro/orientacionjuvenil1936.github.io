@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.S.O.J</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../IMG/logo.png" type="x-icon">
+    <style>
+      .expandable-box {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease;
+      }
+  
+      .expandable-box.expanded {
+        height: auto;
+        opacity: 1;
+      }
+  
+      .carousel-item img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+  
+    </style>
+
+</head>
+<body>
+    <header>
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+              <img src="../IMG/logo.png" alt="Logo" height="50" class="mr-2">
+              <span class="navbar-title">Orientacion Juvenil</span>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end collapse" id="navbarNav" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../PAGINAS\actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../PAGINAS\contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="display-4 mb-4">Sobre Nosotros</h2>
+              <p>El club comenzó como un colegio primario, atendiendo a más de 300 alumnos en terrenos propiedad de "nombre", quien también era el propietario del diario más grande del país. "nombre" formó la primera comisión directiva junto con algunos vecinos, donando los terrenos y convirtiendo el colegio en un club de barrio.</p>
+              <p>Inicialmente, las principales actividades del club eran el baloncesto y el tango. Durante los fines de semana, el club se transformaba en un animado baile de barrio, atrayendo a las mejores orquestas de la época.</p>
+              <p>A medida que los miembros originales fallecían, nuevas comisiones surgían, dejando una huella indeleble en la historia del club. Con el tiempo, varios presidentes lideraron pequeñas obras y mejoras en las instalaciones, consolidando así la identidad y el legado del club a lo largo de los años.</p>
+              <a href="#Contacto" class="btn btn-primary btn-mas-sobre-nosotros">Escríbenos</a>
+            </div>
+            <div class="col-lg-6">
+              <img src="../IMG/logo.png" alt="Sobre Nosotros" class="img-fluid">
+              <div class="mt-4">
+                <h5>Síguenos en redes sociales:</h5>
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/CSDOrientacionJuvenil" target="_blank" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/orientacion_juvenil/" target="_blank" class="btn btn-social btn-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank" class="btn btn-social btn-gmail"><i class="fas fa-envelope"></i></a>
+                    
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 bg-light other-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="display-4 mb-4" id="Contacto">Contáctanos</h2>
+              <p>Estamos aquí para responder cualquier pregunta que puedas tener. Ponte en contacto con nosotros y te responderemos lo antes posible.</p>
+              <form action="enviar_correo.php" method="post">
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <h2 class="display-4 mb-4">Nuestra ubicación</h2>
+              <p>Estamos ubicados en:</p>
+              <address>
+                Av.Santa Fe 1849<br>
+                Avellaneda<br>
+                Argentina<br>
+              </address>
+              <p>No dudes en visitarnos en nuestras instalaciones o contactarnos a través de los siguientes medios:</p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-phone"></i> Teléfono: +123456789</li>
+                <li><i class="fas fa-envelope"></i> Correo electrónico:  <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">orientacionjuvenil1936@gmail.com</a></li>
+                <li><i class="fab fa-facebook-f"></i> Facebook: <a href="https://www.facebook.com/CSDOrientacionJuvenil" target="_blank">Orientacion Juvenil</a></li>
+                <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/orientacion_juvenil/" target="_blank">@orientacion_juvenil</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      <footer class="bg-dark text-white">
+        <div class="container text-center">
+          <p>© 2024 Orientacion Juvenil. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      var expandableBox = $(".expandable-box");
+    
+      // Esperar unos segundos y luego abrir el elemento expandible
+      setTimeout(function() {
+        expandableBox.addClass("expanded");
+      }, 900);
+    });
+    </script>
+    
+</body>
+</html>

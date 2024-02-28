@@ -1,0 +1,199 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" keywoeds= "Orientacion, Orienta, Orietacion juvenil, Oj"content="width=device-width, initial-scale=1.0">
+    <title>C.S.O.J</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="IMG/logo.png" type="x-icon">
+   
+    <style>
+      .expandable-box {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease;
+      }
+  
+      .expandable-box.expanded {
+        height: auto;
+        opacity: 1;
+      }
+  
+      .carousel-item img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+  
+    </style>
+  </head>
+  
+  <body>
+  
+    <header>
+  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="/">
+            <img src="IMG/logo.png" alt="Logo" height="50" class="mr-2">
+            <span class="navbar-title">Orientacion Juvenil</span>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse justify-content-end collapse" id="navbarNav" >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./PAGINAS/actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./PAGINAS/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="container">
+        <div class="header-text text-center">
+          <h1 class="display-4">Bienvenido a Orientacion Juvenil</h1>
+          <br>
+          <div class="expandable-box expanded">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="IMG/patin1.png" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="IMG/karate1.png" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="IMG/futbol1.png" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/danza1.png" class="d-block w-100" alt="Imagen 4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMG/canto1.png" class="d-block w-100" alt="Imagen 5">
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </div>
+          <br>
+          <a href="#about" class="btn btn-primary btn-ver-productos">Acerca de nosotros</a>
+        </div>
+      </div>
+  
+    </header>
+  
+    <section class="hero">
+      <div class="container extra-space">
+        <h2 class="text-center display-5">Actividades Disponibles</h2>
+        <p class="text-center">Explora nuestra amplia selección de Actividades</p>
+      </div>
+    </section>
+  
+    <section class="featured-products main-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG/futbol3.jpg" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Futbol Competitivo y Amateur</h5>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG/patin3.jpeg" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Patin Artistico</h5>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="IMG/karate.jpg" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Karate</h5>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container text-center">
+        <a class="btn btn-primary btn-lg btn-ver-mas" href="./PAGINAS/actividades.html">Ver más</a>
+      </div>
+    </section>
+  
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="display-4 mb-4">Sobre Nosotros</h2>
+            <p>En sus primeros años, el club desempeñó el papel de un colegio primario, acogiendo a más de 300 alumnos. Los terrenos pertenecían al propietario, "nombre", quien no solo era el dueño de la propiedad, sino también el propietario de la distribución del diario más grande del país, una tradición que continúan sus herederos hasta el día de hoy.</p>
+            <p>Posteriormente, en colaboración con algunos vecinos, "nombre" formó la primera comisión directiva y donó los terrenos, transformando así el colegio en un club de barrio. Gracias a esta iniciativa, el club cuenta con una estructura y planos bien establecidos. </p>
+            <p>En aquellos primeros días, las actividades principales eran el basket y tango. Durante los fines de semana, el club se convertía en un animado baile de barrio, atrayendo a las mejores orquestas de la época. A medida que los integrantes originales iban falleciendo, surgieron nuevas comisiones, dejando una huella indeleble en la historia del club. </p>
+            <p>Con el tiempo, diversos presidentes tomaron la iniciativa de llevar a cabo pequeñas obras y mejoras en las instalaciones del club. Esta evolución ha contribuido a consolidar la identidad y el legado del club a lo largo de los años</p>
+            <a class="btn btn-primary btn-mas-sobre-nosotros" href="./PAGINAS/contacto.html">Más sobre nosotros</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="IMG/logo.png" alt="Sobre Nosotros" class="img-fluid">
+            <div class="mt-4">
+              <h5>Síguenos en redes sociales:</h5>
+              <div class="social-buttons">
+                <a href="https://www.facebook.com/CSDOrientacionJuvenil" target="_blank" class="btn btn-social btn-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/orientacion_juvenil/" target="_blank" class="btn btn-social btn-instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank" class="btn btn-social btn-gmail"><i class="fas fa-envelope"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+        <p>© 2024 Orientacion Juvenil. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    var expandableBox = $(".expandable-box");
+  
+    // Esperar unos segundos y luego abrir el elemento expandible
+    setTimeout(function() {
+      expandableBox.addClass("expanded");
+    }, 900);
+  });
+  </script>
+  
+  </body></html>

@@ -1,0 +1,553 @@
+/* Estilos generales */
+@font-face {
+    font-family: 'Demon';
+    src: url('Tipografia/DS Cloister Black.ttf') format('truetype');
+  }
+  
+  h1, h2, div.hero-content p {
+    font-family: Demon;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar-title {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+/Edge */
+     user-select: none; /* Standard */
+  }
+  
+  .contact-section {
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+  
+  .other-section {
+    background-color: #e9e9e9;
+    color: #555555;
+  }
+  
+  .my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-img-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding-top: 45%;
+  }
+      .card-img-top {
+        max-height: 300px;
+        object-fit: cover;
+        width: 100%;
+      }
+  .card:hover .card-img-overlay {
+    display: block;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  
+  .carousel-indicators {
+    bottom: -25px;
+  }
+      .expandable-box {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease;
+      }
+  
+      .expandable-box.expanded {
+        height: auto;
+        opacity: 1;
+      }
+  
+      .carousel-item img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar-brand {
+    font-family: Demon;
+  }
+  
+  .navbar-brand:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Diseño de botones de Redes */
+  .social-buttons .btn-facebook {
+    background-color: #215ba2;
+    color: #fff;
+  }
+  
+  .social-buttons .btn-instagram {
+    background-color: #1b72d0;
+    color: #fff;
+  }
+  
+  .social-buttons .btn-gmail {
+    background-color: #08bbff;
+    color: #fff;
+  }
+  
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #001a57;
+    padding: 20px 0;
+  }
+  /* Ajusta el valor según el espacio deseado */
+  .header-text {
+    margin-top:20px;
+    margin-bottom: 10px; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Estilos de la sección de productos */
+  .productos {
+    padding: 40px 0;
+  }
+  
+  .productos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .producto {
+    background-color: #292929;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .producto img {
+    max-width: 100%;
+  }
+  
+  .producto h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 15px;
+  }
+  
+  .producto p {
+    color: #b2b2b2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .producto .btn {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .producto .btn:hover {
+    background-color: #003366;
+  }
+  
+  /* Estilos de la sección de contacto */
+  .contacto {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  .contacto form input,
+  .contacto form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .contacto form button {
+    background-color: #e60000;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .contacto form button:hover {
+    background-color: #c40000;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #1b72d0;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-social-buttons {
+    margin-bottom: 30px;
+  }
+  
+  .footer-social-buttons .btn {
+    margin-right: 10px;
+  }
+  
+  .footer-social-buttons .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+  }
+  /* Estilos generales */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos de la barra de navegación */
+  header {
+    background-color: #080842; /* Color de fondo de la barra de navegación */
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff; /* Color de texto de los enlaces del menú */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #cccccc; /* Color de texto al pasar el cursor por encima de los enlaces del menú */
+  }
+  
+  .navbar-nav .active {
+    font-weight: bold;
+  }
+  
+  /* Estilos de la sección de productos */
+  #productos {
+    background-color: white; /* Color de fondo de la sección de productos */
+    padding: 80px 0;
+  }
+  
+  #productos h2 {
+    color: #ffffff; /* Color de texto del título de la sección de productos */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    background-color: #111111; /* Color de fondo de las tarjetas de productos */
+    border: none;
+    color: #ffffff; /* Color de texto de las tarjetas de productos */
+  }
+  
+  .card-title {
+    color: #ffffff; /* Color de texto del título de las tarjetas de productos */
+  }
+  
+  .card-text {
+    color: #cccccc; /* Color de texto del contenido de las tarjetas de productos */
+  }
+  
+  .card a.btn-primary {
+    background-color: #ffffff; /* Color de fondo del botón de las tarjetas de productos */
+    color: #000000; /* Color de texto del botón de las tarjetas de productos */
+  }
+  
+  .card a.btn-primary:hover {
+    background-color: #1b72d0; /* Color de fondo del botón al pasar el cursor por encima */
+    color: #000000; /* Color de texto del botón al pasar el cursor por encima */
+  }
+  
+  .btn-primary {
+    background-color: #001a57;
+    color: #ffffff;
+    border-color: white;
+    }
+  
+  .btn-primary:hover {
+  background-color: #1b72d0;
+  border-color: #ffffff;
+  }
+  
+  .btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color: #001a57; /* Color de fondo del footer */
+    color: #ffffff; /* Color de texto del footer */
+    padding: 10px;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  
+  .featured-products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .featured-products h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .featured-products .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .featured-products .col-md-4 {
+    padding: 0 15px;
+  }
+  
+  .featured-products .card {
+    background-color: #111111;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease; /* Agrega una transición de escala suave */
+  }
+  
+  .featured-products .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .featured-products .card-title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .featured-products .card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .featured-products .card a.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .featured-products .card a.btn-primary:hover {
+    background-color: #cccccc;
+    color: #000000;
+  }
+  
+  /* Efecto de estirar al pasar el cursor */
+  .featured-products .card:hover {
+    transform: scale(1.1); /* Escala el producto al 110% al pasar el cursor */
+  }
+  
+  /* Estilos del NavBar */
+  .navbar {
+    background-color: #000000;
+    border: none; /* Quita el borde del NavBar */
+    box-shadow: none; /* Quita la sombra del NavBar */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navbar-brand img {
+    height: 30px; /* Reduce la altura del logo */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Reduce el relleno vertical y horizontal de los enlaces */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #cccccc;
+  }
+  
+  .navbar-nav .active {
+    font-weight: bold;
+  }
+  
+  /* Estilos del NavBar en pantalla móvil */
+  @media (max-width: 767.98px) {
+    /* Estilo para corregir el color del fondo del navbar */
+    .navbar {
+      background-color: transparent; /* Cambia el color de fondo a transparente */
+    }
+  
+    /* Estilo para corregir el color del texto del navbar cuando se abre el menú */
+    .navbar-collapse .nav-link {
+      color: #ffffff; /* Color de texto del navbar cuando se abre el menú */
+    }
+  
+    /* Estilo para corregir el color de fondo del navbar cuando se abre el menú */
+    .navbar-collapse {
+      background-color: transparent; /* Cambia el color de fondo a transparente */
+    }
+    /* Alineación a la derecha del contenido del menú */
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  
+    .navbar-nav {
+      flex-direction: row-reverse;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+  }
+  
+  /* Estilos adicionales para pantallas de PC */
+  @media (min-width: 992px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  
+    .col-md-4 {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 15px;
+    }
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+      /* Estilos personalizados para la barra de desplazamiento */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      ::-webkit-scrollbar-track {
+        background-color: white;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background-color: #001a57;
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #001a57;
+      }
+  
